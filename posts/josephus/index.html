@@ -346,8 +346,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98/" class="post-category">
-                                经典问题
+                            <a href="/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E9%97%AE%E9%A2%98/" class="post-category">
+                                经典算法问题
                             </a>
                         
                     </div>
@@ -368,7 +368,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    558
+                    529
                 </div>
                 
 
@@ -405,10 +405,12 @@
 <p>$h(x)$：一个从 $f(n-1,m)$ 到 $g(n-1,m)$ 的映射。</p>
 </blockquote>
 <p>下面求解这个 $h(x)$，观察如下映射规则：<br>$0\rightarrow k+1$</p>
-<p>$1\rightarrow k+2$<br>$…$<br>$n-3\rightarrow k-2$<br>$n-2\rightarrow k-1$<br>可得：$h(x)=(x+k+1)%n$，因此有:<br>$$<br>\begin{align*}<br>f(n,m) &amp;= g(n-1,m) \<br>&amp;= h(f(n-1,m)) \<br>&amp;= (f(n-1,m)+k+1)%n \<br>&amp;= (f(n-1,m)+(m-1)%n+1)%n \<br>&amp;\overset{①}={} ((f(n-1,m)+1)%n+(m-1)%n)%n \<br>&amp;\overset{②}={} ((f(n-1,m)+1)+(m-1))%n \<br>&amp;= (f(n-1,m)+m)%n \<br>\end{align*}<br>$$</p>
+<p>$1\rightarrow k+2$<br>$…$<br>$n-3\rightarrow k-2$<br>$n-2\rightarrow k-1$<br>可得：$h(x)=(x+k+1)%n$，因此有:</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt"><mtr><mtd><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo></mtd><mtd><mi></mi><mo>=</mo><mi>g</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd></mtd><mtd><mi></mi><mo>=</mo><mi>h</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd></mtd><mtd><mi></mi><mo>=</mo><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi></mtd></mtr><mtr><mtd></mtd><mtd><mi></mi><mo>=</mo><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi></mtd></mtr><mtr><mtd></mtd><mtd><mi></mi><mover><mo>=</mo><mrow><mo>①</mo></mrow></mover><mrow></mrow><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi><mo>+</mo><mo stretchy="false">(</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi></mtd></mtr><mtr><mtd></mtd><mtd><mi></mi><mover><mo>=</mo><mrow><mo>②</mo></mrow></mover><mrow></mrow><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi></mtd></mtr><mtr><mtd></mtd><mtd><mi></mi><mo>=</mo><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>+</mo><mi>m</mi><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi></mtd></mtr></mtable></math></p>
 <p>其中$①：0\leq f(n-1,m)\leq n-2$，$1\leq f(n-1,m)+1\leq n-1$，因此 $(f(n-1,m)+1)%n= f(n-1,m)+1$</p>
 <p>$②:distributive\ law:(a+b)%p=(a%p+b%p)%p$</p>
-<p>最终我们有递推公式：<br>$$<br>\begin{equation}<br>f(n,m)=\left{<br>\begin{array}{cl}<br>0  &amp;  n = 0 \<br>(f(n-1,m)+m)%n &amp;  n &gt; 1 \<br>\end{array} \right.\nonumber<br>\end{equation}<br>$$</p>
+<p>最终我们有递推公式：</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">{</mo><mtable columnalign="center left" columnspacing="1em" rowspacing="4pt"><mtr><mtd><mn>0</mn></mtd><mtd><mi>n</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>+</mo><mi>m</mi><mo stretchy="false">)</mo><mi mathvariant="normal">%</mi><mi>n</mi></mtd><mtd><mi>n</mi><mo>&gt;</mo><mn>1</mn></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo></mrow></math></p>
 <h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">josephus</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">==</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
@@ -887,8 +889,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98/" class="post-category">
-                                    经典问题
+                            <a href="/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E9%97%AE%E9%A2%98/" class="post-category">
+                                    经典算法问题
                                 </a>
                             
                             

@@ -368,7 +368,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    651
+                    635
                 </div>
                 
 
@@ -404,13 +404,9 @@
 <p>得到PDF后，就可以算出分布函数CDF：</p>
 <p>$$F(r)=\int_0^rf(t)\ dt=r^2$$</p>
 <p>通过上面的分析，想要得到等概率，需要在 $[0,1]$ 内等概率取 $F(r)$ 的值，$r=\sqrt{F(r)}$，然后再对单位圆进行放缩。</p>
-<h5 id="坐标生成"><a href="#坐标生成" class="headerlink" title="坐标生成"></a>坐标生成</h5><p>根据极坐标生成圆心的坐标：<br>$$<br>\left{</p>
-<p>  \begin{aligned}</p>
-<p>  \rho^2&amp;=x^2+y^2 \</p>
-<p>  x&amp;=\rho\cos{\theta}\</p>
-<p>  y&amp;=\rho\sin{\theta}\</p>
-<p>  \end{aligned}</p>
-<p>\right.<br>$$<br>其中，$\theta$ 可在 $[0, 2\pi]$ 中等概率生成。</p>
+<h5 id="坐标生成"><a href="#坐标生成" class="headerlink" title="坐标生成"></a>坐标生成</h5><p>根据极坐标生成圆心的坐标：</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">{</mo><mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt"><mtr><mtd><msup><mi>ρ</mi><mn>2</mn></msup></mtd><mtd><mi></mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd><mi>x</mi></mtd><mtd><mi></mi><mo>=</mo><mi>ρ</mi><mi>cos</mi><mo data-mjx-texclass="NONE">⁡</mo><mrow><mi>θ</mi></mrow></mtd></mtr><mtr><mtd><mi>y</mi></mtd><mtd><mi></mi><mo>=</mo><mi>ρ</mi><mi>sin</mi><mo data-mjx-texclass="NONE">⁡</mo><mrow><mi>θ</mi></mrow></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo></mrow></math></p>
+<p>其中，$\theta$ 可在 $[0, 2\pi]$ 中等概率生成。</p>
 <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
     <span class="token keyword">const</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token function">acos</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
