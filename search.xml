@@ -31,6 +31,31 @@
     
     
     <entry>
+      <title>LeetCode829.连续整数求和</title>
+      <link href="/lc/lc829/"/>
+      <url>/lc/lc829/</url>
+      
+        <content type="html"><![CDATA[<h1 id="LeetCode829-连续整数求和"><a href="#LeetCode829-连续整数求和" class="headerlink" title="LeetCode829.连续整数求和"></a>LeetCode829.连续整数求和</h1><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>本题目来自LeetCode上的<a href="https://leetcode.cn/problems/consecutive-numbers-sum/" target="_blank">『829.连续整数求和』 </a></p><p>给定一个正整数 <code>n</code>，返回连续正整数满足所有数字之和为 <code>n</code> 的组数 。</p><h5 id="示例1："><a href="#示例1：" class="headerlink" title="示例1："></a>示例1：</h5><blockquote><p><strong>输入</strong>: n = 5<br><strong>输出</strong>: 2<br><strong>解释</strong>: 5 = 2 + 3，共有两组连续整数([5],[2,3])求和后为 5。</p></blockquote><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>设这组连续的数字的首个数字为 $a$，长度为 $k$，则由等差数列和可知</p><p>$$\frac{(a+a+k-1)k}{2}=n$$</p><p>得 $(2a+k-1)k=2n$，推出 $k\mid 2n$</p><p>再变形可得 $2a=\frac{2n}{k}-k+1$，由 $a\in {x|x\ge 1\wedge x\in N}$ 推出 $2\mid (\frac{2n}{k}-k+1)$</p><p>还能推出 $\frac{2n}{k}-k+1\ge2$，进而得到 $\frac{2n}{k}\ge k+1&gt;k$，即 $k&lt;\sqrt{2n}$</p><p>综上，我们枚举 $k$，检查是否符合上述两个整除关系即可。</p><h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token keyword">int</span> <span class="token function">consecutiveNumbersSum</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span> limit <span class="token operator">=</span> <span class="token function">sqrt</span><span class="token punctuation">(</span>n <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> limit<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">%</span> i <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token keyword">continue</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> n <span class="token operator">/</span> i <span class="token operator">-</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token operator">++</span>ans<span class="token punctuation">;</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul><li><p>时间复杂度：$O(\sqrt{2n})$</p></li><li><p>空间复杂度：$O(1)$</p></li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LeetCode478.在圆内随机生成点</title>
       <link href="/lc/lc478/"/>
       <url>/lc/lc478/</url>
@@ -50,31 +75,6 @@
             <tag> 数学 </tag>
             
             <tag> 概率论 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>LeetCode829.连续整数求和</title>
-      <link href="/lc/lc829/"/>
-      <url>/lc/lc829/</url>
-      
-        <content type="html"><![CDATA[<h1 id="LeetCode829-连续整数求和"><a href="#LeetCode829-连续整数求和" class="headerlink" title="LeetCode829.连续整数求和"></a>LeetCode829.连续整数求和</h1><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>本题目来自LeetCode上的<a href="https://leetcode.cn/problems/consecutive-numbers-sum/" target="_blank">『829.连续整数求和』 </a></p><p>给定一个正整数 <code>n</code>，返回连续正整数满足所有数字之和为 <code>n</code> 的组数 。</p><h5 id="示例1："><a href="#示例1：" class="headerlink" title="示例1："></a>示例1：</h5><blockquote><p><strong>输入</strong>: n = 5<br><strong>输出</strong>: 2<br><strong>解释</strong>: 5 = 2 + 3，共有两组连续整数([5],[2,3])求和后为 5。</p></blockquote><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>设这组连续的数字的首个数字为 $a$，长度为 $k$，则由等差数列和可知</p><p>$$\frac{(a+a+k-1)k}{2}=n$$</p><p>得 $(2a+k-1)k=2n$，推出 $k\mid 2n$</p><p>再变形可得 $2a=\frac{2n}{k}-k+1$，由 $a\in {x|x\ge 1\wedge x\in N}$ 推出 $2\mid (\frac{2n}{k}-k+1)$</p><p>还能推出 $\frac{2n}{k}-k+1\ge2$，进而得到 $\frac{2n}{k}\ge k+1&gt;k$，即 $k&lt;\sqrt{2n}$</p><p>综上，我们枚举 $k$，检查是否符合上述两个整除关系即可。</p><h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token keyword">int</span> <span class="token function">consecutiveNumbersSum</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span> limit <span class="token operator">=</span> <span class="token function">sqrt</span><span class="token punctuation">(</span>n <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> limit<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">%</span> i <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token keyword">continue</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> n <span class="token operator">/</span> i <span class="token operator">-</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token operator">++</span>ans<span class="token punctuation">;</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul><li><p>时间复杂度：$O(\sqrt{2n})$</p></li><li><p>空间复杂度：$O(1)$</p></li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      
-      
-      <categories>
-          
-          <category> LeetCode </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 数学 </tag>
             
         </tags>
       
@@ -139,33 +139,6 @@
     
     
     <entry>
-      <title>图论1-1.图的介绍</title>
-      <link href="/graph/introduction-to-graph/"/>
-      <url>/graph/introduction-to-graph/</url>
-      
-        <content type="html"><![CDATA[<h1 id="图论1-1-图的介绍"><a href="#图论1-1-图的介绍" class="headerlink" title="图论1-1.图的介绍"></a>图论1-1.图的介绍</h1><p>图可以表示生活中的许多东西，它是由一个点集以及点集中一些点对的连线构成。如一个人就可以表示成一个点，两个点之间的连线表示朋友关系等。</p><h2 id="1-1-图的表示"><a href="#1-1-图的表示" class="headerlink" title="1.1 图的表示"></a>1.1 图的表示</h2><p>图（Graph）是由一个点集（vertices, <strong>V</strong>）和一个边集（edges, <strong>E</strong>）构成，表示为 <strong><em>G(V, E)。</em></strong><br>有时候，图也被定义为一个有序三元组  $(V(G),E(G),\phi_G)$，其中 $\phi_G$被称为关联函数，$\phi(e)=uv$表示边$e$连接$uv$两个顶点。</p><ol><li><strong>顶点</strong>：是图的基本要素，也叫做节点（node）。顶点可以带有标记也可以不带。</li><li><strong>边</strong>：用于连接任意两个顶点（也可以自己连自己）， 有时候边也叫做弧（arc）。</li><li><strong>顶点数</strong>：$\upsilon$；<strong>边数：</strong>$\varepsilon$</li><li>如果两个图 G 和 H，有$V(G)=V(H),E(G)=E(H),\phi(G)=\phi(H)$，则这两个图** 恒等**$G=H$。</li><li>如果两个图 **只有 **边和顶点的标号不同，则这两个图 <strong>同构</strong>$G\cong H$</li></ol><p>例：</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/1.jpeg" style="zoom:50%;"><ol><li>一条边的顶点与这条边称为<strong>关联</strong>，反之亦然。</li><li>与同一条边关联的叫做相邻，反之亦然。</li><li>端点重合为一个点的边称为环，上图顶点6就存在一个环。</li></ol><h2 id="1-2-图的种类"><a href="#1-2-图的种类" class="headerlink" title="1.2 图的种类"></a>1.2 图的种类</h2><h4 id="1-空图（Null-graph）"><a href="#1-空图（Null-graph）" class="headerlink" title="1. 空图（Null graph）"></a>1. 空图（Null graph）</h4><p>没有边的图叫做空图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/2.jpeg" style="zoom:50%;"><h4 id="2-平凡图（Trivial-Graph）"><a href="#2-平凡图（Trivial-Graph）" class="headerlink" title="2. 平凡图（Trivial Graph）"></a>2. 平凡图（Trivial Graph）</h4><p>只有一个顶点的图叫做平凡图，它是最小的图。其他的所有图都叫做非平凡图（Nontrivial graph）。</p><h4 id="3-无向图（Undirected-Graph）"><a href="#3-无向图（Undirected-Graph）" class="headerlink" title="3. 无向图（Undirected Graph）"></a>3. 无向图（Undirected Graph）</h4><p>边没有方向的图叫做无向图。</p><h4 id="4-有向图（Directed-Graph）"><a href="#4-有向图（Directed-Graph）" class="headerlink" title="4. 有向图（Directed Graph）"></a>4. 有向图（Directed Graph）</h4><p>边有方向的图叫做有向图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/3.jpeg" style="zoom:50%;"><h4 id="5-连通图（Connected-Graph）"><a href="#5-连通图（Connected-Graph）" class="headerlink" title="5. 连通图（Connected Graph）"></a>5. 连通图（Connected Graph）</h4><p>从一个点开始，可以访问到其他任意点的图叫做连通图。</p><h4 id="6-非连通图（Disconnected-Graph）"><a href="#6-非连通图（Disconnected-Graph）" class="headerlink" title="6. 非连通图（Disconnected Graph）"></a>6. 非连通图（Disconnected Graph）</h4><p>从一个点开始，不能访问到其他任意点的图叫做连通图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/4.jpeg" style="zoom:50%;"><h4 id="7-正则图（Regular-Graph）"><a href="#7-正则图（Regular-Graph）" class="headerlink" title="7. 正则图（Regular Graph）"></a>7. 正则图（Regular Graph）</h4><p>每个顶点度都相同的图叫做正则图。每个顶点度为 K 的图叫做 <strong>K-正则图（K-Regular）</strong></p><h4 id="8-完全图（Complete-Graph）"><a href="#8-完全图（Complete-Graph）" class="headerlink" title="8. 完全图（Complete Graph）"></a>8. 完全图（Complete Graph）</h4><p>每个顶点都与其他顶点相邻的图叫做完全图，完全图是一个$\upsilon-1$正则图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/5.jpeg" style="zoom:50%;"><h4 id="9-圈图（Cycle-Graph）"><a href="#9-圈图（Cycle-Graph）" class="headerlink" title="9. 圈图（Cycle Graph）"></a>9. 圈图（Cycle Graph）</h4><p>如果一个图自身就是一个环，就叫做圈图，也称为<strong>自环</strong>。</p><h4 id="10-有环图（Cyclic-Graph）"><a href="#10-有环图（Cyclic-Graph）" class="headerlink" title="10. 有环图（Cyclic Graph）"></a>10. 有环图（Cyclic Graph）</h4><p>一个图至少含有一个环，称为有环图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/6.jpeg" style="zoom:50%;"><h4 id="11-无环图（acyclic-graph）、"><a href="#11-无环图（acyclic-graph）、" class="headerlink" title="11. 无环图（acyclic graph）、"></a>11. 无环图（<strong>acyclic graph</strong>）、</h4><p>一个图不包含环，称为无环图。</p><h4 id="12-有向无环图（Directed-Acyclic-Graph）"><a href="#12-有向无环图（Directed-Acyclic-Graph）" class="headerlink" title="12. 有向无环图（Directed Acyclic Graph）"></a>12. 有向无环图（Directed Acyclic Graph）</h4><p>一个有向图不包含环，称为有向无环图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/7.jpeg" style="zoom:50%;"><h4 id="13-二分图（Bipartite-Graph）"><a href="#13-二分图（Bipartite-Graph）" class="headerlink" title="13. 二分图（Bipartite Graph）"></a>13. 二分图（Bipartite Graph）</h4><p>如果一个图的顶点可以分成两个集合，且每个集合内部的顶点之间不存在边，这样的图叫做二分图，也叫做二部图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/8.jpeg" style="zoom:50%;"><h4 id="14-简单图（Simple-graph）"><a href="#14-简单图（Simple-graph）" class="headerlink" title="14. 简单图（Simple graph）"></a>14. 简单图（Simple graph）</h4><p>如果一个图既没有环也没有重边，叫做简单图。</p><h2 id="1-3-一个结论"><a href="#1-3-一个结论" class="headerlink" title="1.3 一个结论"></a>1.3 一个结论</h2><p>如果 G 是简单图，则$\varepsilon\leq C_\upsilon^2$</p><h2 id="1-4-图的表示"><a href="#1-4-图的表示" class="headerlink" title="1.4 图的表示"></a>1.4 图的表示</h2><p>在数据结构中，图有两种表示方法。</p><h4 id="1-邻接矩阵（Adjacency-Matrix）"><a href="#1-邻接矩阵（Adjacency-Matrix）" class="headerlink" title="1. 邻接矩阵（Adjacency Matrix）"></a>1. 邻接矩阵（Adjacency Matrix）</h4><p>使用一个二维的矩阵表示图，矩阵的行和列都为顶点编号，若顶点$1,2$直接有一条边，则矩阵的位置$(1,2)$置一。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/9.jpeg" style="zoom:50%;"><h4 id="2-邻接表（Adjacency-List）"><a href="#2-邻接表（Adjacency-List）" class="headerlink" title="2. 邻接表（Adjacency List）"></a>2. 邻接表（Adjacency List）</h4><p>每一个顶点对应一个链表，链表的头节点为顶点编号，后面的节点为相邻的顶点。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/10.jpeg" style="zoom:50%;"><h4 id="3-两种数据结构对比"><a href="#3-两种数据结构对比" class="headerlink" title="3. 两种数据结构对比"></a>3. 两种数据结构对比</h4><p>当图含有较多边的时候，建议使用邻接矩阵。</p><table><thead><tr><th></th><th>邻接矩阵</th><th>邻接表</th></tr></thead><tbody><tr><td>添加一条边</td><td>$O(1)$</td><td>$O(1)$</td></tr><tr><td>删除一条边</td><td>$O(1)$</td><td>$O(n)$</td></tr><tr><td>初始化</td><td>$O(n*n)$</td><td>$O(n)$</td></tr></tbody></table><hr><p>参考资料：<a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/</a></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 图论 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 数据结构 </tag>
-            
-            <tag> 图论 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>约瑟夫环问题</title>
       <link href="/classic-problems/josephus/"/>
       <url>/classic-problems/josephus/</url>
@@ -185,6 +158,33 @@
             <tag> 经典问题 </tag>
             
             <tag> 约瑟夫环 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图论1-1.图的介绍</title>
+      <link href="/graph/introduction-to-graph/"/>
+      <url>/graph/introduction-to-graph/</url>
+      
+        <content type="html"><![CDATA[<h1 id="图论1-1-图的介绍"><a href="#图论1-1-图的介绍" class="headerlink" title="图论1-1.图的介绍"></a>图论1-1.图的介绍</h1><p>图可以表示生活中的许多东西，它是由一个点集以及点集中一些点对的连线构成。如一个人就可以表示成一个点，两个点之间的连线表示朋友关系等。</p><h2 id="1-1-图的表示"><a href="#1-1-图的表示" class="headerlink" title="1.1 图的表示"></a>1.1 图的表示</h2><p>图（Graph）是由一个点集（vertices, <strong>V</strong>）和一个边集（edges, <strong>E</strong>）构成，表示为 <strong><em>G(V, E)。</em></strong><br>有时候，图也被定义为一个有序三元组  $(V(G),E(G),\phi_G)$，其中 $\phi_G$被称为关联函数，$\phi(e)=uv$表示边$e$连接$uv$两个顶点。</p><ol><li><strong>顶点</strong>：是图的基本要素，也叫做节点（node）。顶点可以带有标记也可以不带。</li><li><strong>边</strong>：用于连接任意两个顶点（也可以自己连自己）， 有时候边也叫做弧（arc）。</li><li><strong>顶点数</strong>：$\upsilon$；<strong>边数：</strong>$\varepsilon$</li><li>如果两个图 G 和 H，有$V(G)=V(H),E(G)=E(H),\phi(G)=\phi(H)$，则这两个图** 恒等**$G=H$。</li><li>如果两个图 **只有 **边和顶点的标号不同，则这两个图 <strong>同构</strong>$G\cong H$</li></ol><p>例：</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/1.jpeg" style="zoom:50%;"><ol><li>一条边的顶点与这条边称为<strong>关联</strong>，反之亦然。</li><li>与同一条边关联的叫做相邻，反之亦然。</li><li>端点重合为一个点的边称为环，上图顶点6就存在一个环。</li></ol><h2 id="1-2-图的种类"><a href="#1-2-图的种类" class="headerlink" title="1.2 图的种类"></a>1.2 图的种类</h2><h4 id="1-空图（Null-graph）"><a href="#1-空图（Null-graph）" class="headerlink" title="1. 空图（Null graph）"></a>1. 空图（Null graph）</h4><p>没有边的图叫做空图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/2.jpeg" style="zoom:50%;"><h4 id="2-平凡图（Trivial-Graph）"><a href="#2-平凡图（Trivial-Graph）" class="headerlink" title="2. 平凡图（Trivial Graph）"></a>2. 平凡图（Trivial Graph）</h4><p>只有一个顶点的图叫做平凡图，它是最小的图。其他的所有图都叫做非平凡图（Nontrivial graph）。</p><h4 id="3-无向图（Undirected-Graph）"><a href="#3-无向图（Undirected-Graph）" class="headerlink" title="3. 无向图（Undirected Graph）"></a>3. 无向图（Undirected Graph）</h4><p>边没有方向的图叫做无向图。</p><h4 id="4-有向图（Directed-Graph）"><a href="#4-有向图（Directed-Graph）" class="headerlink" title="4. 有向图（Directed Graph）"></a>4. 有向图（Directed Graph）</h4><p>边有方向的图叫做有向图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/3.jpeg" style="zoom:50%;"><h4 id="5-连通图（Connected-Graph）"><a href="#5-连通图（Connected-Graph）" class="headerlink" title="5. 连通图（Connected Graph）"></a>5. 连通图（Connected Graph）</h4><p>从一个点开始，可以访问到其他任意点的图叫做连通图。</p><h4 id="6-非连通图（Disconnected-Graph）"><a href="#6-非连通图（Disconnected-Graph）" class="headerlink" title="6. 非连通图（Disconnected Graph）"></a>6. 非连通图（Disconnected Graph）</h4><p>从一个点开始，不能访问到其他任意点的图叫做连通图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/4.jpeg" style="zoom:50%;"><h4 id="7-正则图（Regular-Graph）"><a href="#7-正则图（Regular-Graph）" class="headerlink" title="7. 正则图（Regular Graph）"></a>7. 正则图（Regular Graph）</h4><p>每个顶点度都相同的图叫做正则图。每个顶点度为 K 的图叫做 <strong>K-正则图（K-Regular）</strong></p><h4 id="8-完全图（Complete-Graph）"><a href="#8-完全图（Complete-Graph）" class="headerlink" title="8. 完全图（Complete Graph）"></a>8. 完全图（Complete Graph）</h4><p>每个顶点都与其他顶点相邻的图叫做完全图，完全图是一个$\upsilon-1$正则图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/5.jpeg" style="zoom:50%;"><h4 id="9-圈图（Cycle-Graph）"><a href="#9-圈图（Cycle-Graph）" class="headerlink" title="9. 圈图（Cycle Graph）"></a>9. 圈图（Cycle Graph）</h4><p>如果一个图自身就是一个环，就叫做圈图，也称为<strong>自环</strong>。</p><h4 id="10-有环图（Cyclic-Graph）"><a href="#10-有环图（Cyclic-Graph）" class="headerlink" title="10. 有环图（Cyclic Graph）"></a>10. 有环图（Cyclic Graph）</h4><p>一个图至少含有一个环，称为有环图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/6.jpeg" style="zoom:50%;"><h4 id="11-无环图（acyclic-graph）、"><a href="#11-无环图（acyclic-graph）、" class="headerlink" title="11. 无环图（acyclic graph）、"></a>11. 无环图（<strong>acyclic graph</strong>）、</h4><p>一个图不包含环，称为无环图。</p><h4 id="12-有向无环图（Directed-Acyclic-Graph）"><a href="#12-有向无环图（Directed-Acyclic-Graph）" class="headerlink" title="12. 有向无环图（Directed Acyclic Graph）"></a>12. 有向无环图（Directed Acyclic Graph）</h4><p>一个有向图不包含环，称为有向无环图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/7.jpeg" style="zoom:50%;"><h4 id="13-二分图（Bipartite-Graph）"><a href="#13-二分图（Bipartite-Graph）" class="headerlink" title="13. 二分图（Bipartite Graph）"></a>13. 二分图（Bipartite Graph）</h4><p>如果一个图的顶点可以分成两个集合，且每个集合内部的顶点之间不存在边，这样的图叫做二分图，也叫做二部图。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/8.jpeg" style="zoom:50%;"><h4 id="14-简单图（Simple-graph）"><a href="#14-简单图（Simple-graph）" class="headerlink" title="14. 简单图（Simple graph）"></a>14. 简单图（Simple graph）</h4><p>如果一个图既没有环也没有重边，叫做简单图。</p><h2 id="1-3-一个结论"><a href="#1-3-一个结论" class="headerlink" title="1.3 一个结论"></a>1.3 一个结论</h2><p>如果 G 是简单图，则$\varepsilon\leq C_\upsilon^2$</p><h2 id="1-4-图的表示"><a href="#1-4-图的表示" class="headerlink" title="1.4 图的表示"></a>1.4 图的表示</h2><p>在数据结构中，图有两种表示方法。</p><h4 id="1-邻接矩阵（Adjacency-Matrix）"><a href="#1-邻接矩阵（Adjacency-Matrix）" class="headerlink" title="1. 邻接矩阵（Adjacency Matrix）"></a>1. 邻接矩阵（Adjacency Matrix）</h4><p>使用一个二维的矩阵表示图，矩阵的行和列都为顶点编号，若顶点$1,2$直接有一条边，则矩阵的位置$(1,2)$置一。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/9.jpeg" style="zoom:50%;"><h4 id="2-邻接表（Adjacency-List）"><a href="#2-邻接表（Adjacency-List）" class="headerlink" title="2. 邻接表（Adjacency List）"></a>2. 邻接表（Adjacency List）</h4><p>每一个顶点对应一个链表，链表的头节点为顶点编号，后面的节点为相邻的顶点。</p><img src="https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/graph_theory/1-1/10.jpeg" style="zoom:50%;"><h4 id="3-两种数据结构对比"><a href="#3-两种数据结构对比" class="headerlink" title="3. 两种数据结构对比"></a>3. 两种数据结构对比</h4><p>当图含有较多边的时候，建议使用邻接矩阵。</p><table><thead><tr><th></th><th>邻接矩阵</th><th>邻接表</th></tr></thead><tbody><tr><td>添加一条边</td><td>$O(1)$</td><td>$O(1)$</td></tr><tr><td>删除一条边</td><td>$O(1)$</td><td>$O(n)$</td></tr><tr><td>初始化</td><td>$O(n*n)$</td><td>$O(n)$</td></tr></tbody></table><hr><p>参考资料：<a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/</a></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 图论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+            <tag> 图论 </tag>
             
         </tags>
       
