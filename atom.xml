@@ -18,8 +18,8 @@
   
   <entry>
     <title>LeetCode929.独特的电子邮件地址</title>
-    <link href="https://xitie2000.github.io/posts/lc929/"/>
-    <id>https://xitie2000.github.io/posts/lc929/</id>
+    <link href="https://xitie2000.github.io/lc/lc929/"/>
+    <id>https://xitie2000.github.io/lc/lc929/</id>
     <published>2022-06-05T04:30:29.000Z</published>
     <updated>2022-06-05T04:59:21.330Z</updated>
     
@@ -45,8 +45,8 @@
   
   <entry>
     <title>LeetCode478.在圆内随机生成点</title>
-    <link href="https://xitie2000.github.io/posts/lc478/"/>
-    <id>https://xitie2000.github.io/posts/lc478/</id>
+    <link href="https://xitie2000.github.io/lc/lc478/"/>
+    <id>https://xitie2000.github.io/lc/lc478/</id>
     <published>2022-06-03T06:30:29.000Z</published>
     <updated>2022-06-05T06:41:51.637Z</updated>
     
@@ -72,8 +72,8 @@
   
   <entry>
     <title>LeetCode829.连续整数求和</title>
-    <link href="https://xitie2000.github.io/posts/lc829/"/>
-    <id>https://xitie2000.github.io/posts/lc829/</id>
+    <link href="https://xitie2000.github.io/lc/lc829/"/>
+    <id>https://xitie2000.github.io/lc/lc829/</id>
     <published>2022-06-03T06:30:29.000Z</published>
     <updated>2022-06-04T10:53:06.175Z</updated>
     
@@ -97,8 +97,8 @@
   
   <entry>
     <title>LeetCode450.删除二叉搜索树中的节点</title>
-    <link href="https://xitie2000.github.io/posts/lc450/"/>
-    <id>https://xitie2000.github.io/posts/lc450/</id>
+    <link href="https://xitie2000.github.io/lc/lc450/"/>
+    <id>https://xitie2000.github.io/lc/lc450/</id>
     <published>2022-06-02T04:50:49.000Z</published>
     <updated>2022-06-05T04:59:06.017Z</updated>
     
@@ -126,8 +126,8 @@
   
   <entry>
     <title>LeetCode433.最小基因变化</title>
-    <link href="https://xitie2000.github.io/posts/lc433/"/>
-    <id>https://xitie2000.github.io/posts/lc433/</id>
+    <link href="https://xitie2000.github.io/lc/lc433/"/>
+    <id>https://xitie2000.github.io/lc/lc433/</id>
     <published>2022-05-07T04:50:49.000Z</published>
     <updated>2022-06-02T13:21:53.126Z</updated>
     
@@ -152,9 +152,36 @@
   </entry>
   
   <entry>
+    <title>图论1-1.图的介绍</title>
+    <link href="https://xitie2000.github.io/graph/introduction-to-graph/"/>
+    <id>https://xitie2000.github.io/graph/introduction-to-graph/</id>
+    <published>2022-05-07T04:50:49.000Z</published>
+    <updated>2022-06-05T12:15:57.085Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;图论1-1-图的介绍&quot;&gt;&lt;a href=&quot;#图论1-1-图的介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="图论" scheme="https://xitie2000.github.io/categories/%E5%9B%BE%E8%AE%BA/"/>
+    
+    
+    <category term="数据结构" scheme="https://xitie2000.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="图论" scheme="https://xitie2000.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>约瑟夫环问题</title>
-    <link href="https://xitie2000.github.io/posts/josephus/"/>
-    <id>https://xitie2000.github.io/posts/josephus/</id>
+    <link href="https://xitie2000.github.io/classic-problems/josephus/"/>
+    <id>https://xitie2000.github.io/classic-problems/josephus/</id>
     <published>2022-05-04T04:50:49.000Z</published>
     <updated>2022-06-05T06:40:50.977Z</updated>
     

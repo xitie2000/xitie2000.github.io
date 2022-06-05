@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="LeetCode433.最小基因变化, 喜帖空间">
-    <meta name="description" content="本题目来自LeetCode上的『433. 最小基因变化』">
+    <meta name="keywords" content="LeetCode478.在圆内随机生成点, 喜帖空间">
+    <meta name="description" content="本题目来自LeetCode上的『LeetCode478.在圆内随机生成点』">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +20,7 @@
     
     <style>
         body{
-            background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+            background-image: url(https://shuocloud-db.oss-cn-hangzhou.aliyuncs.com/background/acknights/Kal'tsit.jpg);
             background-repeat:no-repeat;
             background-size: 100% 100%;
             background-attachment:fixed;
@@ -28,7 +28,7 @@
     </style>
 
 
-    <title>LeetCode433.最小基因变化 | 喜帖空间</title>
+    <title>LeetCode478.在圆内随机生成点 | 喜帖空间</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -209,12 +209,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.webp')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">LeetCode433.最小基因变化</h1>
+                    <h1 class="description center-align post-title">LeetCode478.在圆内随机生成点</h1>
                 </div>
             </div>
         </div>
@@ -330,12 +330,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                                <span class="chip bg-color">字符串</span>
+                            <a href="/tags/%E6%95%B0%E5%AD%A6/">
+                                <span class="chip bg-color">数学</span>
                             </a>
                         
-                            <a href="/tags/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/">
-                                <span class="chip bg-color">广度优先搜索</span>
+                            <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/">
+                                <span class="chip bg-color">概率论</span>
                             </a>
                         
                     </div>
@@ -359,7 +359,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-07
+                    2022-06-03
                 </div>
                 
 
@@ -368,7 +368,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    601
+                    635
                 </div>
                 
 
@@ -388,97 +388,48 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="LeetCode433-最小基因变化"><a href="#LeetCode433-最小基因变化" class="headerlink" title="LeetCode433.最小基因变化"></a>LeetCode433.最小基因变化</h1><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>本题目来自 LeetCode 上的<a href="https://leetcode-cn.com/problems/minimum-genetic-mutation/" target="_blank">『433. 最小基因变化』</a></p>
-<p>一组基因序列由8个字符组成。一次基因变化定义为 <strong>基因序列中的一个字符</strong> 发生变化。<br>设 <code>bank</code> 中为所有合法的基因变化，求基因 <code>start</code> 到 <code>end</code> 需要经历几次基因变化。</p>
-<h5 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h5><blockquote>
-<p>输入：start = “AACCGGTT”, end = “AACCGGTA”, bank = [“AACCGGTA”]</p>
-<p>输出：1</p>
+                <h1 id="LeetCode478-在圆内随机生成点"><a href="#LeetCode478-在圆内随机生成点" class="headerlink" title="LeetCode478.在圆内随机生成点"></a>LeetCode478.在圆内随机生成点</h1><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>本题目来自LeetCode上的<a href="https://leetcode.cn/problems/generate-random-point-in-a-circle/" target="_blank">『LeetCode478.在圆内随机生成点』 </a></p>
+<p>给定圆的半径和圆心，实现一个函数，可以在圆中产生均匀随机点。</p>
+<h5 id="示例1："><a href="#示例1：" class="headerlink" title="示例1："></a>示例1：</h5><blockquote>
+<p><strong>输入</strong>:<br>[“Solution”,”randPoint”,”randPoint”,”randPoint”]<br>[[1.0, 0.0, 0.0], [], [], []]<br><strong>输出</strong>: [null, [-0.02493, -0.38077], [0.82314, 0.38945], [0.36572, 0.17248]]<br><strong>解释</strong>:<br>Solution solution = new Solution(1.0, 0.0, 0.0);<br>solution.randPoint ();//返回[-0.02493，-0.38077]<br>solution.randPoint ();//返回[0.82314,0.38945]<br>solution.randPoint ();//返回[0.36572,0.17248]</p>
 </blockquote>
-<h5 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h5><blockquote>
-<p>输入：start = “AAAAACCC”, end = “AACCCCCC”, bank = [“AAAACCCC”,”AAACCCCC”,”AACCCCCC”]</p>
-<p>输出：3</p>
-</blockquote>
-<h5 id="提示："><a href="#提示：" class="headerlink" title="提示："></a>提示：</h5><ul>
-<li><code>start.length == 8</code></li>
-<li><code>end.length == 8</code></li>
-<li><code>0 &lt;= bank.length &lt;= 10</code></li>
-<li><code>bank[i].length == 8</code></li>
-<li><code>start</code>、<code>end</code> 和 <code>bank[i]</code> 仅由字符 <code>['A', 'C', 'G', 'T']</code> 组成</li>
-</ul>
-<h3 id="题解—预处理-BFS"><a href="#题解—预处理-BFS" class="headerlink" title="题解—预处理+BFS"></a>题解—预处理+BFS</h3><p>我们用 $0,1,2,…$ 为<code>bank</code> 中的基因编号，以这些编号为顶点建无向图，建图规则如下：</p>
-<ul>
-<li>如果两个基因序列的 <strong>距离</strong> 为1，即两个基因序列只有一个字符不同，那么就在这两个顶点之间加上一条边。</li>
-<li>为了方便搜索，我们将基因序列 <code>start</code> 也加入到 <code>bank</code> 的末尾。</li>
-</ul>
-<p>建图完毕后，问题就转化成求 <code>start</code> 所在点 <code>x</code> 到 <code>end</code> 所在点 <code>y</code> 之间的最小距离，如果两点不连通就返回 <code>-1</code>。<br>无权值图的单源最短路径可以使用 BFS。</p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>如果不考虑等概率，直接返回圆心就行（笑</p>
+<p>考虑等概率的话，就需要一番分析啦，本文从两个角度进行讲解。</p>
+<h5 id="角度1-几何概型角度"><a href="#角度1-几何概型角度" class="headerlink" title="角度1 - 几何概型角度"></a>角度1 - 几何概型角度</h5><p>首先考虑一个朴素的几何概型想法：</p>
+<p>在 $[0,r]$ 的线段上随机取值，取到 $[0,\frac{r}{2}]$ 的概率为 $\frac{1}{2}$，现在将这个线段的一端固定，另一端旋转一周，线段扫过的图形为一个以 $r$ 为半径的圆，此时线段 $[0,\frac{r}{2}]$ 扫过的圆面积为整个圆面积的 $\frac{1}{4}$，圆内随机取一个点，这个点落在小圆的概率为 $\frac{1}{4}$。因此，在一维中等概率取一点，旋转成圆之后就不是等概率了。</p>
+<h5 id="角度2-概率论角度"><a href="#角度2-概率论角度" class="headerlink" title="角度2 - 概率论角度"></a>角度2 - 概率论角度</h5><p>下面从概率论角度分析。</p>
+<p>不失一般性，我们以单位圆为例，在单位圆上任取一点，这个点落到某一圆周上的长度与该圆周的周长成正比，从而也就与该圆周的半径成正比，设单位圆的概率密度函数 $f(r)=kr$，因此：</p>
+<p>$$1=P(0\leq r\leq 1)=\int_0^1kr\ dr=\frac{1}{2}k$$</p>
+<p>得 $k=2$，PDF：$f(r)=2r$</p>
+<p>得到PDF后，就可以算出分布函数CDF：</p>
+<p>$$F(r)=\int_0^rf(t)\ dt=r^2$$</p>
+<p>通过上面的分析，想要得到等概率，需要在 $[0,1]$ 内等概率取 $F(r)$ 的值，$r=\sqrt{F(r)}$，然后再对单位圆进行放缩。</p>
+<h5 id="坐标生成"><a href="#坐标生成" class="headerlink" title="坐标生成"></a>坐标生成</h5><p>根据极坐标生成圆心的坐标：</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">{</mo><mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="3pt"><mtr><mtd><msup><mi>ρ</mi><mn>2</mn></msup></mtd><mtd><mi></mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd><mi>x</mi></mtd><mtd><mi></mi><mo>=</mo><mi>ρ</mi><mi>cos</mi><mo data-mjx-texclass="NONE">⁡</mo><mrow><mi>θ</mi></mrow></mtd></mtr><mtr><mtd><mi>y</mi></mtd><mtd><mi></mi><mo>=</mo><mi>ρ</mi><mi>sin</mi><mo data-mjx-texclass="NONE">⁡</mo><mrow><mi>θ</mi></mrow></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo></mrow></math></p>
+<p>其中，$\theta$ 可在 $[0, 2\pi]$ 中等概率生成。</p>
 <h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
-    vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span> graph<span class="token punctuation">;</span>
-    <span class="token keyword">int</span> <span class="token function">distance</span><span class="token punctuation">(</span><span class="token keyword">const</span> string<span class="token operator">&amp;</span> s1<span class="token punctuation">,</span> <span class="token keyword">const</span> string<span class="token operator">&amp;</span> s2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> dist <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>s1<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>s1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> s2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token operator">++</span>dist<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> dist<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">void</span> <span class="token function">build</span><span class="token punctuation">(</span><span class="token keyword">const</span> vector<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span><span class="token operator">&amp;</span> bank<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> bank<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">distance</span><span class="token punctuation">(</span>bank<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> bank<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    graph<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">emplace_back</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    graph<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">emplace_back</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">int</span> <span class="token function">bfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        vector<span class="token operator">&lt;</span><span class="token keyword">bool</span><span class="token operator">&gt;</span> <span class="token function">visited</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        queue<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> q<span class="token punctuation">;</span>
-        q<span class="token punctuation">.</span><span class="token function">emplace</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        visited<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>q<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> q<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">--</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">int</span> poll <span class="token operator">=</span> q<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                q<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>poll <span class="token operator">==</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">auto</span><span class="token operator">&amp;</span> v <span class="token operator">:</span> graph<span class="token punctuation">[</span>poll<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>visited<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                        q<span class="token punctuation">.</span><span class="token function">emplace</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                        visited<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-                    <span class="token punctuation">}</span>
-                <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span>
-            <span class="token operator">++</span>ans<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
+    <span class="token keyword">const</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token function">acos</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> r<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
+    mt19937 gen<span class="token punctuation">{</span> random_device<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    uniform_real_distribution<span class="token operator">&lt;</span><span class="token keyword">double</span><span class="token operator">&gt;</span> dis<span class="token punctuation">;</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token keyword">int</span> <span class="token function">minMutation</span><span class="token punctuation">(</span>string start<span class="token punctuation">,</span> string end<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span><span class="token operator">&amp;</span> bank<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        bank<span class="token punctuation">.</span><span class="token function">emplace_back</span><span class="token punctuation">(</span>start<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> bank<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        graph<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">build</span><span class="token punctuation">(</span>bank<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> idx <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>bank<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                idx <span class="token operator">=</span> i<span class="token punctuation">;</span>
-                <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> <span class="token function">bfs</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> idx<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">Solution</span><span class="token punctuation">(</span><span class="token keyword">double</span> radius<span class="token punctuation">,</span> <span class="token keyword">double</span> x_center<span class="token punctuation">,</span> <span class="token keyword">double</span> y_center<span class="token punctuation">)</span> <span class="token operator">:</span>
+    <span class="token function">r</span><span class="token punctuation">(</span>radius<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">x</span><span class="token punctuation">(</span>x_center<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">y</span><span class="token punctuation">(</span>y_center<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">dis</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+    
+    vector<span class="token operator">&lt;</span><span class="token keyword">double</span><span class="token operator">&gt;</span> <span class="token function">randPoint</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">double</span> theta <span class="token operator">=</span> <span class="token function">dis</span><span class="token punctuation">(</span>gen<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">*</span> PI<span class="token punctuation">;</span>
+        <span class="token keyword">double</span> rho <span class="token operator">=</span> <span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token function">dis</span><span class="token punctuation">(</span>gen<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">*</span> r<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>x <span class="token operator">+</span> rho <span class="token operator">*</span> <span class="token function">cos</span><span class="token punctuation">(</span>theta<span class="token punctuation">)</span><span class="token punctuation">,</span> y <span class="token operator">+</span> rho <span class="token operator">*</span> <span class="token function">sin</span><span class="token punctuation">(</span>theta<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
-<li>时间复杂度：设 <code>bank</code> 长度为 $n$，基因序列长度为 $m$，则建图的复杂度为 $O(m\times n^2)$，搜索时，最多搜索 $n$ 个顶点，因此搜索的复杂度为 $n$，综合复杂度为 $O(m\times n^2)$</li>
-<li>空间复杂度 $O(n^2)$</li>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><p>不考虑生成随机数的复杂度</p>
+<ul>
+<li><p>时间复杂度：$O(1)$</p>
+</li>
+<li><p>空间复杂度：$O(1)$</p>
+</li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
                 
@@ -506,7 +457,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xitie2000.github.io/posts/lc433/">https://xitie2000.github.io/posts/lc433/</a>
+                    <a href="https://xitie2000.github.io/lc/lc478/">https://xitie2000.github.io/lc/lc478/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -544,12 +495,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                                    <span class="chip bg-color">字符串</span>
+                                <a href="/tags/%E6%95%B0%E5%AD%A6/">
+                                    <span class="chip bg-color">数学</span>
                                 </a>
                             
-                                <a href="/tags/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/">
-                                    <span class="chip bg-color">广度优先搜索</span>
+                                <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/">
+                                    <span class="chip bg-color">概率论</span>
                                 </a>
                             
                         </div>
@@ -869,24 +820,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/lc450/">
+                <a href="/lc/lc929/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/21.webp" class="responsive-img" alt="LeetCode450.删除二叉搜索树中的节点">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/4.webp" class="responsive-img" alt="LeetCode929.独特的电子邮件地址">
                         
-                        <span class="card-title">LeetCode450.删除二叉搜索树中的节点</span>
+                        <span class="card-title">LeetCode929.独特的电子邮件地址</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本题目来自LeetCode上的『450.删除二叉搜索树中的节点』
+                            本题目来自LeetCode上的『929.独特的电子邮件地址』
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-02
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-05
                         </span>
                         <span class="publish-author">
                             
@@ -903,16 +854,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%A0%91/">
-                        <span class="chip bg-color">树</span>
+                    <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
+                        <span class="chip bg-color">字符串</span>
                     </a>
                     
-                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
-                        <span class="chip bg-color">二叉搜索树</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">
-                        <span class="chip bg-color">二叉树</span>
+                    <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/">
+                        <span class="chip bg-color">哈希表</span>
                     </a>
                     
                 </div>
@@ -926,31 +873,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/josephus/">
+                <a href="/lc/lc829/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/15.webp" class="responsive-img" alt="约瑟夫环问题">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/19.webp" class="responsive-img" alt="LeetCode829.连续整数求和">
                         
-                        <span class="card-title">约瑟夫环问题</span>
+                        <span class="card-title">LeetCode829.连续整数求和</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            介绍经典约瑟夫环问题
+                            本题目来自LeetCode上的『829.连续整数求和』
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-03
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E9%97%AE%E9%A2%98/" class="post-category">
-                                    经典算法问题
+                            <a href="/categories/LeetCode/" class="post-category">
+                                    LeetCode
                                 </a>
                             
                             
@@ -960,12 +907,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98/">
-                        <span class="chip bg-color">经典问题</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/">
-                        <span class="chip bg-color">约瑟夫环</span>
+                    <a href="/tags/%E6%95%B0%E5%AD%A6/">
+                        <span class="chip bg-color">数学</span>
                     </a>
                     
                 </div>
