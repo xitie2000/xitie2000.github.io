@@ -425,7 +425,7 @@
 <li>时间复杂度：$O(n^2)$</li>
 <li>空间复杂度：$O(n)$</li>
 </ul>
-<h4 id="题解2-线段树-懒标记-动态开点"><a href="#题解2-线段树-懒标记-动态开点" class="headerlink" title="题解2 - 线段树+懒标记+动态开点"></a><strong>题解2 - 线段树+懒标记+动态开点</strong></h4><p>由于本题是多次查询，且值域很大，所以需要『动态开点』。为了减少时间复杂度，可以使用『懒标记』。</p>
+<h3 id="题解2-线段树-懒标记-动态开点"><a href="#题解2-线段树-懒标记-动态开点" class="headerlink" title="题解2 - 线段树+懒标记+动态开点"></a>题解2 - 线段树+懒标记+动态开点</h3><p>由于本题是多次查询，且值域很大，所以需要『动态开点』。为了减少时间复杂度，可以使用『懒标记』。</p>
 <p>直接套板子就行。</p>
 <h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a><strong>代码</strong></h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">SegmentTree</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
