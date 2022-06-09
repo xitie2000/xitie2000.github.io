@@ -368,7 +368,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    869
+                    1.2k
                 </div>
                 
 
@@ -450,7 +450,108 @@
 <blockquote>
 <p>0-&gt; 1-&gt; 3-&gt; 4<br>1-&gt; 0-&gt; 4<br>2-&gt; 3<br>3-&gt; 0-&gt; 2-&gt; 4<br>4-&gt; 0-&gt; 1-&gt; 3</p>
 </blockquote>
-<h2 id="2-3-总结"><a href="#2-3-总结" class="headerlink" title="2.3 总结"></a>2.3 总结</h2><p>在实际应用中，稀疏图（$\varepsilon\ll\upsilon^2$）较为常见，因此邻接表最为常用。</p>
+<h2 id="2-3-链式向前星"><a href="#2-3-链式向前星" class="headerlink" title="2.3 链式向前星"></a>2.3 链式向前星</h2><p>使用 <code>head[i]</code> 存储起点是 <code>i</code> 的第一条边的位置（在 <code>to</code> 和 <code>next</code>），<code>to[i]</code> 是第 <code>i</code> 条边的终点，<code>next[i]</code> 是第 <code>i</code> 条边的后继边的位置。</p>
+<p><code>head[i]</code> 初始化为 <code>-1</code>。</p>
+<p>对于添加边的顺序 <code>0-&gt;1, 1-&gt;2, 2-&gt;3, 0-&gt;2, 0-&gt;3</code> 有以下存储状态。</p>
+<table>
+<thead>
+<tr>
+<th>index</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>head</td>
+<td>0-&gt;3-&gt;4</td>
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>index</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>to</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>next</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<h3 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现"></a>代码实现</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> V<span class="token punctuation">,</span> E<span class="token punctuation">;</span>
+vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> head<span class="token punctuation">,</span> nxt<span class="token punctuation">,</span> to<span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token keyword">int</span> src<span class="token punctuation">,</span> <span class="token keyword">int</span> dest<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	nxt<span class="token punctuation">.</span><span class="token function">emplace_back</span><span class="token punctuation">(</span>head<span class="token punctuation">[</span>src<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	head<span class="token punctuation">[</span>src<span class="token punctuation">]</span> <span class="token operator">=</span> to<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	to<span class="token punctuation">.</span><span class="token function">emplace_back</span><span class="token punctuation">(</span>dest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">queryEdge</span><span class="token punctuation">(</span><span class="token keyword">int</span> src<span class="token punctuation">,</span> <span class="token keyword">int</span> dest<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> head<span class="token punctuation">[</span>src<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token operator">~</span>i<span class="token punctuation">;</span> i <span class="token operator">=</span> nxt<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>	<span class="token comment">// ~i -&gt; i != -1</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>to<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> dest<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Edge from "</span> <span class="token operator">&lt;&lt;</span> src <span class="token operator">&lt;&lt;</span> <span class="token string">" to "</span> <span class="token operator">&lt;&lt;</span> dest <span class="token operator">&lt;&lt;</span> <span class="token string">" found."</span> <span class="token operator">&lt;&lt;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+			<span class="token keyword">return</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Edge from "</span> <span class="token operator">&lt;&lt;</span> src <span class="token operator">&lt;&lt;</span> <span class="token string">" to "</span> <span class="token operator">&lt;&lt;</span> dest <span class="token operator">&lt;&lt;</span> <span class="token string">" not found."</span> <span class="token operator">&lt;&lt;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">printGraph</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> V<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		cout <span class="token operator">&lt;&lt;</span> i<span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> head<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token operator">~</span>j<span class="token punctuation">;</span> j <span class="token operator">=</span> nxt<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>	<span class="token comment">// ~i -&gt; i != -1</span>
+			cout <span class="token operator">&lt;&lt;</span> <span class="token string">"-&gt; "</span> <span class="token operator">&lt;&lt;</span> to<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    V <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">,</span> E <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    head<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span>E<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+    <span class="token function">printGraph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">queryEdge</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">queryEdge</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>输出：</strong></p>
+<blockquote>
+<p>0-&gt; 3-&gt; 2-&gt; 1<br>1-&gt; 2<br>2-&gt; 3<br>3<br>Edge from 2 to 1 not found.<br>Edge from 0 to 3 found.</p>
+</blockquote>
+<p>查询边需要 $O(\upsilon)$ 的时间，遍历整张图需要 $O(\upsilon+\varepsilon)$ 的时间，空间复杂度为 $O(\varepsilon)$。</p>
 <h2 id="2-4-使用哈希表表示"><a href="#2-4-使用哈希表表示" class="headerlink" title="2.4 使用哈希表表示"></a>2.4 使用哈希表表示</h2><p>我们使用哈希表来保存每个顶点的相邻点。这里使用c++的无序集合 <code>unordered_set</code>，如果使用有序集合则查询时间会增加到 $O(\upsilon)$。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h&gt;</span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
