@@ -6,7 +6,7 @@
   <link href="https://xitie2000.github.io/atom.xml" rel="self"/>
   
   <link href="https://xitie2000.github.io/"/>
-  <updated>2022-06-20T06:13:37.787Z</updated>
+  <updated>2022-06-21T03:32:37.959Z</updated>
   <id>https://xitie2000.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>LeetCode1108. IP 地址无效化</title>
+    <link href="https://xitie2000.github.io/lc/lc1108/"/>
+    <id>https://xitie2000.github.io/lc/lc1108/</id>
+    <published>2022-06-20T06:13:00.000Z</published>
+    <updated>2022-06-21T03:32:37.959Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode1108-IP-地址无效化&quot;&gt;&lt;a href=&quot;#LeetCode1108-IP-地址无效化&quot; class=&quot;headerlink&quot; title=&quot;LeetCode1108. IP 地址无效化&quot;&gt;&lt;/a&gt;LeetCode1108. IP</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="线段树" scheme="https://xitie2000.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+    <category term="珂朵莉树" scheme="https://xitie2000.github.io/tags/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LeetCode715. Range 模块</title>
     <link href="https://xitie2000.github.io/lc/lc715/"/>
     <id>https://xitie2000.github.io/lc/lc715/</id>
     <published>2022-06-20T06:13:00.000Z</published>
-    <updated>2022-06-20T06:13:37.787Z</updated>
+    <updated>2022-06-21T03:33:11.004Z</updated>
     
     
       
@@ -516,33 +543,6 @@
     <category term="二叉搜索树" scheme="https://xitie2000.github.io/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/"/>
     
     <category term="二叉树" scheme="https://xitie2000.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode433. 最小基因变化</title>
-    <link href="https://xitie2000.github.io/lc/lc433/"/>
-    <id>https://xitie2000.github.io/lc/lc433/</id>
-    <published>2022-05-07T04:50:49.000Z</published>
-    <updated>2022-06-07T12:28:09.545Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode433-最小基因变化&quot;&gt;&lt;a href=&quot;#LeetCode433-最小基因变化&quot; class=&quot;headerlink&quot; title=&quot;LeetCode433. 最小基因变化&quot;&gt;&lt;/a&gt;LeetCode433. 最小基因变化&lt;/h1&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="字符串" scheme="https://xitie2000.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-    <category term="广度优先搜索" scheme="https://xitie2000.github.io/tags/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
