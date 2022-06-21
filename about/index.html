@@ -499,7 +499,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"经典算法问题","value":1},{"name":"图论","value":5},{"name":"LeetCode","value":21},{"name":"背包九讲","value":2}],
+                data: [{"name":"经典算法问题","value":1},{"name":"LeetCode","value":21},{"name":"背包九讲","value":2},{"name":"图论","value":5}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -878,7 +878,7 @@ $(function () {
             const strs = href.split('/');
             if (strs.length >= 3) {
                 const host = strs[2];
-                if (host !== 'your_domain' || window.location.host) {
+                if (host !== '' || window.location.host) {
                     $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
                     if (true) {
                         $this.attr('target', '_blank');
