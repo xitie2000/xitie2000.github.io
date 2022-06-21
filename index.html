@@ -380,6 +380,29 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/featureimages/48.webp');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">图论1-1 图的介绍</div>
+                            <div class="description center-align">
+                                
+                                    图论第一章第一节，图的介绍
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/graph/1-1introduction-to-graph/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
                  style="background-image: url('/medias/featureimages/20.webp');">
                 <div class="container">
                     <div class="row">
@@ -461,29 +484,6 @@
                             </div>
                             <div class="cover-btns">
                                 <a href="/knapsack/1-01-bei-bao-wen-ti/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/48.webp');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">图论1-1 图的介绍</div>
-                            <div class="description center-align">
-                                
-                                    图论第一章第一节，图的介绍
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/graph/1-1introduction-to-graph/" class="waves-effect waves-light btn"
                                    target="_blank">
                                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                                 </a>
@@ -1442,7 +1442,7 @@ $(function () {
             const strs = href.split('/');
             if (strs.length >= 3) {
                 const host = strs[2];
-                if (host !== 'null' || window.location.host) {
+                if (host !== 'your_domain' || window.location.host) {
                     $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
                     if (true) {
                         $this.attr('target', '_blank');
