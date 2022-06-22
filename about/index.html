@@ -269,7 +269,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">29</a></span>
+    <span class="count"><a href="/">30</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -283,7 +283,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">26</a></span>
+    <span class="count"><a href="/tags">27</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -299,7 +299,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">29</a></span>
+    <span class="count"><a href="/">30</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -313,7 +313,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">26</a></span>
+    <span class="count"><a href="/tags">27</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -457,7 +457,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [2,0,0,0,0,0,0,0,0,0,5,2,20],
+                data: [2,0,0,0,0,0,0,0,0,0,5,2,21],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -499,7 +499,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"经典算法问题","value":1},{"name":"LeetCode","value":21},{"name":"背包九讲","value":2},{"name":"图论","value":5}],
+                data: [{"name":"经典算法问题","value":1},{"name":"LeetCode","value":22},{"name":"背包九讲","value":2},{"name":"图论","value":5}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -866,28 +866,7 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-
-        <script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script>
-        <script>
-        const hasAttr = (e,a) => a.some(_=> e.attr(_)!==undefined);
-        $('a').each(function() {
-          const $this = $(this);
-          if(hasAttr($this,["data-fancybox","ignore-external-link"])) return;
-          const href = $this.attr('href');
-          if (href && href.match('^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)')) {
-            const strs = href.split('/');
-            if (strs.length >= 3) {
-                const host = strs[2];
-                if (host !== '' || window.location.host) {
-                    $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
-                    if (true) {
-                        $this.attr('target', '_blank');
-                    }
-                }
-            }
-          }
-        });
-        </script><script>
+<script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 3,
