@@ -6,7 +6,7 @@
   <link href="https://xitie2000.github.io/atom.xml" rel="self"/>
   
   <link href="https://xitie2000.github.io/"/>
-  <updated>2022-07-02T02:25:27.427Z</updated>
+  <updated>2022-07-03T06:51:03.373Z</updated>
   <id>https://xitie2000.github.io/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode31. 下一个排列</title>
+    <link href="https://xitie2000.github.io/lc/lc31/"/>
+    <id>https://xitie2000.github.io/lc/lc31/</id>
+    <published>2022-07-03T02:20:00.000Z</published>
+    <updated>2022-07-03T06:51:03.373Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode31-下一个排列&quot;&gt;&lt;a href=&quot;#LeetCode31-下一个排列&quot; class=&quot;headerlink&quot; title=&quot;LeetCode31. 下一个排列&quot;&gt;&lt;/a&gt;LeetCode31. 下一个排列&lt;/h1&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="堆" scheme="https://xitie2000.github.io/tags/%E5%A0%86/"/>
+    
+    <category term="动态规划" scheme="https://xitie2000.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode556. 下一个更大元素 III</title>
+    <link href="https://xitie2000.github.io/lc/lc556/"/>
+    <id>https://xitie2000.github.io/lc/lc556/</id>
+    <published>2022-07-03T02:20:00.000Z</published>
+    <updated>2022-07-03T06:53:15.809Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode556-下一个更大元素-III&quot;&gt;&lt;a href=&quot;#LeetCode556-下一个更大元素-III&quot; class=&quot;headerlink&quot; title=&quot;LeetCode556. 下一个更大元素 III&quot;&gt;&lt;/a&gt;LeetCode556.</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="堆" scheme="https://xitie2000.github.io/tags/%E5%A0%86/"/>
+    
+    <category term="动态规划" scheme="https://xitie2000.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode871. 最低加油次数</title>
+    <link href="https://xitie2000.github.io/lc/lc871/"/>
+    <id>https://xitie2000.github.io/lc/lc871/</id>
+    <published>2022-07-02T01:20:00.000Z</published>
+    <updated>2022-07-02T06:23:30.412Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode871-最低加油次数&quot;&gt;&lt;a href=&quot;#LeetCode871-最低加油次数&quot; class=&quot;headerlink&quot; title=&quot;LeetCode871. 最低加油次数&quot;&gt;&lt;/a&gt;LeetCode871. 最低加油次数&lt;/h1&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="堆" scheme="https://xitie2000.github.io/tags/%E5%A0%86/"/>
+    
+    <category term="动态规划" scheme="https://xitie2000.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode241. 为运算表达式设计优先级</title>
@@ -38,33 +119,6 @@
     
     
     <category term="递归" scheme="https://xitie2000.github.io/tags/%E9%80%92%E5%BD%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode871. 最低加油次数</title>
-    <link href="https://xitie2000.github.io/lc/lc871/"/>
-    <id>https://xitie2000.github.io/lc/lc871/</id>
-    <published>2022-07-01T04:20:00.000Z</published>
-    <updated>2022-07-02T02:27:22.257Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode871-最低加油次数&quot;&gt;&lt;a href=&quot;#LeetCode871-最低加油次数&quot; class=&quot;headerlink&quot; title=&quot;LeetCode871. 最低加油次数&quot;&gt;&lt;/a&gt;LeetCode871. 最低加油次数&lt;/h1&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="动态规划" scheme="https://xitie2000.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-    <category term="堆" scheme="https://xitie2000.github.io/tags/%E5%A0%86/"/>
     
   </entry>
   
@@ -481,60 +535,6 @@
     
     
     <category term="模拟" scheme="https://xitie2000.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode719. 找出第 K 小的数对距离</title>
-    <link href="https://xitie2000.github.io/lc/lc719/"/>
-    <id>https://xitie2000.github.io/lc/lc719/</id>
-    <published>2022-06-14T03:18:00.000Z</published>
-    <updated>2022-06-15T04:39:42.799Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode719-找出第-K-小的数对距离&quot;&gt;&lt;a href=&quot;#LeetCode719-找出第-K-小的数对距离&quot; class=&quot;headerlink&quot; title=&quot;LeetCode719. 找出第 K 小的数对距离&quot;&gt;&lt;/a&gt;LeetCode719.</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="双指针" scheme="https://xitie2000.github.io/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
-    
-    <category term="二分查找" scheme="https://xitie2000.github.io/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode1051. 高度检查器</title>
-    <link href="https://xitie2000.github.io/lc/lc1051/"/>
-    <id>https://xitie2000.github.io/lc/lc1051/</id>
-    <published>2022-06-13T03:51:00.000Z</published>
-    <updated>2022-06-16T09:59:06.014Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode1051-高度检查器&quot;&gt;&lt;a href=&quot;#LeetCode1051-高度检查器&quot; class=&quot;headerlink&quot; title=&quot;LeetCode1051. 高度检查器&quot;&gt;&lt;/a&gt;LeetCode1051. 高度检查器&lt;/h1&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="排序" scheme="https://xitie2000.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-    <category term="前缀和" scheme="https://xitie2000.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
   </entry>
   
