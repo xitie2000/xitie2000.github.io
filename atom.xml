@@ -6,7 +6,7 @@
   <link href="https://xitie2000.github.io/atom.xml" rel="self"/>
   
   <link href="https://xitie2000.github.io/"/>
-  <updated>2022-07-07T04:57:19.200Z</updated>
+  <updated>2022-07-12T01:20:57.546Z</updated>
   <id>https://xitie2000.github.io/</id>
   
   <author>
@@ -15,6 +15,135 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode1252. 奇数值单元格的数目</title>
+    <link href="https://xitie2000.github.io/lc/lc1252/"/>
+    <id>https://xitie2000.github.io/lc/lc1252/</id>
+    <published>2022-07-12T01:00:00.000Z</published>
+    <updated>2022-07-12T01:20:57.546Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode1252-奇数值单元格的数目&quot;&gt;&lt;a href=&quot;#LeetCode1252-奇数值单元格的数目&quot; class=&quot;headerlink&quot; title=&quot;LeetCode1252. 奇数值单元格的数目&quot;&gt;&lt;/a&gt;LeetCode1252.</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="模拟" scheme="https://xitie2000.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode676. 实现一个魔法字典</title>
+    <link href="https://xitie2000.github.io/lc/lc676/"/>
+    <id>https://xitie2000.github.io/lc/lc676/</id>
+    <published>2022-07-11T02:20:00.000Z</published>
+    <updated>2022-07-11T05:10:37.298Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode676-实现一个魔法字典&quot;&gt;&lt;a href=&quot;#LeetCode676-实现一个魔法字典&quot; class=&quot;headerlink&quot; title=&quot;LeetCode676. 实现一个魔法字典&quot;&gt;&lt;/a&gt;LeetCode676.</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="字典树" scheme="https://xitie2000.github.io/tags/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode741. 摘樱桃</title>
+    <link href="https://xitie2000.github.io/lc/lc741/"/>
+    <id>https://xitie2000.github.io/lc/lc741/</id>
+    <published>2022-07-10T04:20:00.000Z</published>
+    <updated>2022-07-10T11:57:36.078Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode741-摘樱桃&quot;&gt;&lt;a href=&quot;#LeetCode741-摘樱桃&quot; class=&quot;headerlink&quot; title=&quot;LeetCode741. 摘樱桃&quot;&gt;&lt;/a&gt;LeetCode741. 摘樱桃&lt;/h1&gt;&lt;h3 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="动态规划" scheme="https://xitie2000.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="DFS" scheme="https://xitie2000.github.io/tags/DFS/"/>
+    
+    <category term="图论" scheme="https://xitie2000.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode873. 最长的斐波那契子序列的长度</title>
+    <link href="https://xitie2000.github.io/lc/lc873/"/>
+    <id>https://xitie2000.github.io/lc/lc873/</id>
+    <published>2022-07-09T03:20:00.000Z</published>
+    <updated>2022-07-09T03:42:39.331Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode873-最长的斐波那契子序列的长度&quot;&gt;&lt;a href=&quot;#LeetCode873-最长的斐波那契子序列的长度&quot; class=&quot;headerlink&quot; title=&quot;LeetCode873.</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="动态规划" scheme="https://xitie2000.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode1217. 玩筹码</title>
+    <link href="https://xitie2000.github.io/lc/lc1217/"/>
+    <id>https://xitie2000.github.io/lc/lc1217/</id>
+    <published>2022-07-08T04:20:00.000Z</published>
+    <updated>2022-07-09T03:42:55.124Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LeetCode1217-玩筹码&quot;&gt;&lt;a href=&quot;#LeetCode1217-玩筹码&quot; class=&quot;headerlink&quot; title=&quot;LeetCode1217. 玩筹码&quot;&gt;&lt;/a&gt;LeetCode1217. 玩筹码&lt;/h1&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
+    
+    
+    <category term="贪心算法" scheme="https://xitie2000.github.io/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode648. 单词替换</title>
@@ -402,139 +531,6 @@
     
     
     <category term="BFS" scheme="https://xitie2000.github.io/tags/BFS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode30. 串联所有单词的子串</title>
-    <link href="https://xitie2000.github.io/lc/lc30/"/>
-    <id>https://xitie2000.github.io/lc/lc30/</id>
-    <published>2022-06-23T04:00:00.000Z</published>
-    <updated>2022-06-23T04:04:48.961Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode30-串联所有单词的子串&quot;&gt;&lt;a href=&quot;#LeetCode30-串联所有单词的子串&quot; class=&quot;headerlink&quot; title=&quot;LeetCode30. 串联所有单词的子串&quot;&gt;&lt;/a&gt;LeetCode30.</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="哈希表" scheme="https://xitie2000.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
-    
-    <category term="滑动窗口" scheme="https://xitie2000.github.io/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode513. 找树左下角的值</title>
-    <link href="https://xitie2000.github.io/lc/lc513/"/>
-    <id>https://xitie2000.github.io/lc/lc513/</id>
-    <published>2022-06-22T03:39:00.000Z</published>
-    <updated>2022-06-23T04:03:21.697Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode513-找树左下角的值&quot;&gt;&lt;a href=&quot;#LeetCode513-找树左下角的值&quot; class=&quot;headerlink&quot; title=&quot;LeetCode513. 找树左下角的值&quot;&gt;&lt;/a&gt;LeetCode513.</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="BFS" scheme="https://xitie2000.github.io/tags/BFS/"/>
-    
-    <category term="DFS" scheme="https://xitie2000.github.io/tags/DFS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode1108. IP 地址无效化</title>
-    <link href="https://xitie2000.github.io/lc/lc1108/"/>
-    <id>https://xitie2000.github.io/lc/lc1108/</id>
-    <published>2022-06-20T06:13:00.000Z</published>
-    <updated>2022-06-21T03:32:37.959Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode1108-IP-地址无效化&quot;&gt;&lt;a href=&quot;#LeetCode1108-IP-地址无效化&quot; class=&quot;headerlink&quot; title=&quot;LeetCode1108. IP 地址无效化&quot;&gt;&lt;/a&gt;LeetCode1108. IP</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="线段树" scheme="https://xitie2000.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-    <category term="珂朵莉树" scheme="https://xitie2000.github.io/tags/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode715. Range 模块</title>
-    <link href="https://xitie2000.github.io/lc/lc715/"/>
-    <id>https://xitie2000.github.io/lc/lc715/</id>
-    <published>2022-06-20T06:13:00.000Z</published>
-    <updated>2022-06-21T03:33:11.004Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode715-Range-模块&quot;&gt;&lt;a href=&quot;#LeetCode715-Range-模块&quot; class=&quot;headerlink&quot; title=&quot;LeetCode715. Range 模块&quot;&gt;&lt;/a&gt;LeetCode715. Range</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="线段树" scheme="https://xitie2000.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-    <category term="珂朵莉树" scheme="https://xitie2000.github.io/tags/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode508. 出现次数最多的子树元素和</title>
-    <link href="https://xitie2000.github.io/lc/lc508/"/>
-    <id>https://xitie2000.github.io/lc/lc508/</id>
-    <published>2022-06-19T01:55:00.000Z</published>
-    <updated>2022-06-19T01:58:33.406Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;LeetCode508-出现次数最多的子树元素和&quot;&gt;&lt;a href=&quot;#LeetCode508-出现次数最多的子树元素和&quot; class=&quot;headerlink&quot; title=&quot;LeetCode508. 出现次数最多的子树元素和&quot;&gt;&lt;/a&gt;LeetCode508.</summary>
-        
-      
-    
-    
-    
-    <category term="LeetCode" scheme="https://xitie2000.github.io/categories/LeetCode/"/>
-    
-    
-    <category term="DFS" scheme="https://xitie2000.github.io/tags/DFS/"/>
     
   </entry>
   
